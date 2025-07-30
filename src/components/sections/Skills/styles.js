@@ -13,7 +13,7 @@ export const SkillsContainer = styled.section`
 
 export const SectionTitle = styled(motion.h2)`
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.text};
   text-align: center;
