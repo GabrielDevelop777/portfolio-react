@@ -35,7 +35,7 @@ const projectsData = [
 		link: "https://delicias-da-dri.vercel.app/",
 	},
 	{
-		title: "Devburguer",
+		title: "DevBurguer Interface",
 		description: "Hamburgueria completa com pagamento com cartão.",
 		image: projectImage3,
 		link: "https://github.com/GabrielDevelop777/devburger-interface",

@@ -82,9 +82,9 @@ export const ProjectInfoOverlay = styled(motion.div)`
     transform: scale(1.1);
   }
 
-    @media (max-width: 768px) {
-    top: 20px;
-  }
+    /* @media (max-width: 768px) {
+    top: 50px;
+  } */
 `;
 
 export const ProjectTitle = styled.h3`
@@ -96,6 +96,10 @@ export const ProjectTitle = styled.h3`
 export const ProjectDescription = styled.p`
   font-size: 0.9rem;
   margin-bottom: ${({ theme }) => theme.spacing.md};
+  
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const ProjectLink = styled.a`
