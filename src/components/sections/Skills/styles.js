@@ -61,6 +61,7 @@ export const SkillTrack = styled.div`
   width: fit-content; 
   animation: ${scrollAnimation} 20s linear infinite;
   padding: 30px 0;
+  cursor: pointer;
 
   &:hover {
     animation-play-state: paused;
@@ -81,11 +82,6 @@ export const SkillCard = styled.div`
   margin: 0 15px; // Espaçamento entre os cards.
   flex-shrink: 0; // Impede que os cards encolham.
   transition: all 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    border-color: ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 export const SkillIcon = styled.div`
