@@ -86,8 +86,8 @@ export const AboutLink = styled.a`
   transition: color 0.3s ease;
 
   &:hover {
-    opacity: 0.7;
-    transition: ease-in-out 0.5s
+    transition: ease-in-out 0.2s;
+    transform: scale(1.1);
   }
 `;
 
@@ -127,7 +127,7 @@ export const GithubLink = styled.a`
   }
 
   &:hover img {
-    transform: translateY(-5px); // Efeito de levantar ao passar o rato
+    transform: scale(1.1); // Efeito de levantar ao passar o rato
     opacity: 1;
   }
 

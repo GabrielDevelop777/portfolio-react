@@ -31,6 +31,7 @@ const modalVariants = {
 };
 
 const AboutModal = ({ isOpen, onClose }) => {
+	// ALTERAÇÃO: A função de rolagem foi refinada para garantir consistência.
 	const handleScrollToProjects = (e) => {
 		e.preventDefault();
 		onClose();
@@ -39,13 +40,16 @@ const AboutModal = ({ isOpen, onClose }) => {
 			const targetElement = document.getElementById("projetos");
 			if (targetElement) {
 				const headerOffset = 80;
-				const elementPosition = targetElement.offsetTop - headerOffset;
+				const elementPosition = targetElement.getBoundingClientRect().top;
+				const offsetPosition =
+					elementPosition + window.pageYOffset - headerOffset;
+
 				window.scrollTo({
-					top: elementPosition,
+					top: offsetPosition,
 					behavior: "smooth",
 				});
 			}
-		}, 300); // 300ms é a duração da animação de saída
+		}, 300); // Atraso para a animação de fecho do modal
 	};
 
 	return (
@@ -79,7 +83,6 @@ const AboutModal = ({ isOpen, onClose }) => {
 									em soluções elegantes e funcionais usando as tecnologias mais
 									modernas do mercado.
 								</ModalText>
-								{/* NOVO: Botão adicionado com a nova função */}
 								<ProjectsButton
 									href="#projetos"
 									onClick={handleScrollToProjects}

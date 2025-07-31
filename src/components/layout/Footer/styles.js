@@ -28,8 +28,7 @@ export const SocialLink = styled.a`
   z-index: 1;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.primary};
-    transform: translateY(-3px);
+    transform: scale(1.1);
   }
 `;
 

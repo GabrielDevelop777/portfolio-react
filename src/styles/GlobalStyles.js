@@ -22,9 +22,9 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
-  /* Estilização da barra de scroll para um look mais customizado */
+  /* Estilização da barra de scroll */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
