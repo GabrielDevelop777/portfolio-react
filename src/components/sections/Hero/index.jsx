@@ -70,7 +70,7 @@ const Hero = () => {
 				>
 					<Title>
 						Desenvolvedor <br />
-						<span>Front-End</span>
+						<span>FullStack</span>
 					</Title>
 					<motion.div variants={textItemVariants}>
 						<Description>

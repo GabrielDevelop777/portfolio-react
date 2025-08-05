@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-// Aqui a gente estiliza o botão.
 // 'position: fixed' é o segredo para ele ficar "flutuando" na tela.
 export const ButtonWrapper = styled(motion.button)`
   position: fixed;
@@ -21,8 +20,4 @@ export const ButtonWrapper = styled(motion.button)`
   z-index: 1000; // Garante que ele fique por cima de tudo
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
-
-  &:hover {
-    opacity: 0.8;
-  }
 `;
